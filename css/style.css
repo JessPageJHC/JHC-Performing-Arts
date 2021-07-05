@@ -1,7 +1,9 @@
+/* Import fonts from Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Alata&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300');
 
+/* Define colour values */
 :root {
   --background-colour: #F1F7ED;
   --border-colour: #91C7B1;
@@ -9,10 +11,10 @@
   --navbar-active-colour: #B33951;
 }
 
+/*  ------- BACKGROUND & WRAPPER DIV -------  */
 body {
   background-image: url('/images/background.jpg');
   background-size: 100%;
-	background-attachment: fixed;
 }
 
 .wrapper {
@@ -44,6 +46,10 @@ body {
 
 .header h1 {
   font-family: "Alata";
+}
+
+.header img:hover {
+  filter: brightness(120%);
 }
 
 /*  ------- NAVBAR -------  */
@@ -91,7 +97,7 @@ li a:hover {
   padding-left: 20px;
   padding-right: 20px;
   margin-top: 10px;
-  height: 160px;
+  height: 900px;
   width: 65%;
   white-space: normal;
   word-break: break-word;
@@ -113,4 +119,21 @@ li a:hover {
 
 .content h2 {
   font-family: Poppins;
+}
+
+/*  ------- FOOTER -------  */
+.footer {
+  background-color: var(--background-colour);
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-top: 10px;
+  width: 65%;
+  white-space: normal;
+  word-break: break-word;
+  text-align: center;
+}
+
+.footer p {
+  font-family: Merriweather;
+  font-size: 9px;
 }
