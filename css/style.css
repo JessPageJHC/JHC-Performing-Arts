@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Alata&display=swap');
+
+body {
+  background-image: url('/images/background.jpg');
+  background-size: 100%;
+	background-attachment: fixed;
+}
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.header {
+  margin: 5px;
+  background-color: lightgray;
+  padding: 20px;
+  height: 100px;
+  width: 65%;
+  white-space: normal;
+  word-break: break-word;
+  text-align: center;
+}
+
+.header h1 {
+  font-family: "Alata";
+}
