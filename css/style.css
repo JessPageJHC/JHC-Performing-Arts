@@ -2,6 +2,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300');
 
+:root {
+  --background-colour: #F1F7ED;
+  --border-colour: #91C7B1;
+  --navbar-hover-colour: #E3D081;
+  --navbar-active-colour: #B33951;
+}
+
 body {
   background-image: url('/images/background.jpg');
   background-size: 100%;
@@ -18,13 +25,21 @@ body {
 /*  ------- HEADER -------  */
 .header {
   margin: 5px;
-  background-color: lightgray;
+  background-color: var(--background-colour);
   padding: 20px;
   height: 160px;
   width: 65%;
   white-space: normal;
   word-break: break-word;
   text-align: center;
+
+  border-right-style: solid;
+  border-right-width: 20px;
+  border-right-color: var(--border-colour);
+
+  border-left-style: solid;
+  border-left-width: 20px;
+  border-left-color: var(--border-colour);
 }
 
 .header h1 {
@@ -36,7 +51,7 @@ body {
   position: sticky;
   top: 0;
 	z-index: 1;
-  background-color: lightgray;
+  background-color: var(--background-colour);
 }
 
 ul {
@@ -63,16 +78,16 @@ li a {
 }
 
 li a:hover {
-  background-color: rgb(204, 161, 94);
+  background-color: var(--navbar-hover-colour);
 }
 
 .active {
-  background-color:  rgb(198, 55, 55);
+  background-color:  var(--navbar-active-colour);
 }
 
 /*  ------- CONTENT -------  */
 .content {
-  background-color: lightgray;
+  background-color: var(--background-colour);
   padding-left: 20px;
   padding-right: 20px;
   margin-top: 10px;
@@ -81,6 +96,14 @@ li a:hover {
   white-space: normal;
   word-break: break-word;
   text-align: center;
+
+  border-right-style: solid;
+  border-right-width: 20px;
+  border-right-color: var(--border-colour);
+
+  border-left-style: solid;
+  border-left-width: 20px;
+  border-left-color: var(--border-colour);
 }
 
 .content p {
