@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Alata&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
 body {
   background-image: url('/images/background.jpg');
@@ -13,11 +14,12 @@ body {
   width: 100%;
 }
 
+/*  ------- HEADER -------  */
 .header {
   margin: 5px;
   background-color: lightgray;
   padding: 20px;
-  height: 100px;
+  height: 160px;
   width: 65%;
   white-space: normal;
   word-break: break-word;
@@ -26,4 +28,36 @@ body {
 
 .header h1 {
   font-family: "Alata";
+}
+
+/*  ------- NAVBAR -------  */
+ul {
+  list-style-type: none;
+  overflow: hidden;
+  top: 0;
+  text-align: center;
+  margin: 0 auto;
+  display: flex;
+  justify-content:center;
+  height:54px;
+  width:75%;
+  padding: 10px 0;
+}
+
+li a {
+  display: block;
+  color: black;
+  text-align: center;
+  font-family: Poppins;
+  padding: 14px 16px;
+  text-decoration: none;
+	font-size: 17px;
+}
+
+li a:hover {
+  background-color: rgb(255, 211, 153);
+}
+
+.active {
+  background-color:  rgb(233, 53, 53);
 }
