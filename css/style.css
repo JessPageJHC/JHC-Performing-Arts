@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Alata&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300');
 
 body {
   background-image: url('/images/background.jpg');
@@ -31,6 +32,13 @@ body {
 }
 
 /*  ------- NAVBAR -------  */
+.navbar {
+  position: sticky;
+  top: 0;
+	z-index: 1;
+  background-color: lightgray;
+}
+
 ul {
   list-style-type: none;
   overflow: hidden;
@@ -38,9 +46,9 @@ ul {
   text-align: center;
   margin: 0 auto;
   display: flex;
-  justify-content:center;
-  height:54px;
-  width:75%;
+  justify-content: center;
+  height: 54px;
+  width: 75%;
   padding: 10px 0;
 }
 
@@ -55,9 +63,31 @@ li a {
 }
 
 li a:hover {
-  background-color: rgb(255, 211, 153);
+  background-color: rgb(204, 161, 94);
 }
 
 .active {
-  background-color:  rgb(233, 53, 53);
+  background-color:  rgb(198, 55, 55);
+}
+
+/*  ------- CONTENT -------  */
+.content {
+  background-color: lightgray;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-top: 10px;
+  height: 160px;
+  width: 65%;
+  white-space: normal;
+  word-break: break-word;
+  text-align: center;
+}
+
+.content p {
+  font-family: Merriweather;
+  font-size: 14px;
+}
+
+.content h2 {
+  font-family: Poppins;
 }
