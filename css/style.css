@@ -134,6 +134,7 @@ li a:hover {
   font-family: Poppins;
 }
 
+/*  ------- SLIDESHOW -------  */
 .slideshow {
   float: left;
   margin-right: 30px;
@@ -141,6 +142,16 @@ li a:hover {
 
 .slideshow img {
   width: 500px;
+}
+
+.social {
+  width: 25px;
+  position: fixed;
+  bottom: 5px;
+}
+
+.social a:hover {
+  opacity: 0.5;
 }
 
 /*  ------- FOOTER -------  */
