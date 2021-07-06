@@ -33,6 +33,32 @@
 
   <div class="wrapper">
     <div class="content">
+      <div class="slideshow">
+        <img class="mySlides" src="images/image1.jpg">
+        <img class="mySlides" src="images/image2.jpg">
+        <img class="mySlides" src="images/image3.jpg">
+        <img class="mySlides" src="images/image4.jpg">
+        <img class="mySlides" src="images/image5.jpg">
+        <img class="mySlides" src="images/image6.jpg">
+
+        <script>
+          var slideIndex = 0;
+          carousel();
+
+          function carousel() {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            for (i = 0; i < x.length; i++) {
+              x[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > x.length) {slideIndex = 1}
+            x[slideIndex-1].style.display = "block";
+            setTimeout(carousel, 2000); // Change image every 2 seconds
+          }
+        </script>
+      </div>
+
       <h2>Header</h2>
       <p>Paragraph</p>
     </div>
