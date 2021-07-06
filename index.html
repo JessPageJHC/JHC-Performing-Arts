@@ -34,12 +34,12 @@
   <div class="wrapper">
     <div class="content">
       <div class="slideshow">
-        <img class="mySlides" src="images/image1.jpg">
-        <img class="mySlides" src="images/image2.jpg">
-        <img class="mySlides" src="images/image3.jpg">
-        <img class="mySlides" src="images/image4.jpg">
-        <img class="mySlides" src="images/image5.jpg">
-        <img class="mySlides" src="images/image6.jpg">
+        <img class="mySlides fade" src="images/image1.jpg">
+        <img class="mySlides fade" src="images/image2.jpg">
+        <img class="mySlides fade" src="images/image3.jpg">
+        <img class="mySlides fade" src="images/image4.jpg">
+        <img class="mySlides fade" src="images/image5.jpg">
+        <img class="mySlides fade" src="images/image6.jpg">
 
         <script>
           var slideIndex = 0;
@@ -54,13 +54,15 @@
             slideIndex++;
             if (slideIndex > x.length) {slideIndex = 1}
             x[slideIndex-1].style.display = "block";
-            setTimeout(carousel, 2000); // Change image every 2 seconds
+            setTimeout(carousel, 9000); // Change image every 9 seconds
           }
         </script>
       </div>
 
-      <h2>Header</h2>
-      <p>Paragraph</p>
+      <div style="text-align:left;">
+        <h2>look some people</h2>
+        <p>people doing stuff</p>
+      </div>
     </div>
   </div>
 

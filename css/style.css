@@ -3,6 +3,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300');
 
+/* Slideshow animation */
+.fade {
+  animation: fading 9s infinite;
+}
+
+@keyframes fading {
+  0%{opacity:0}
+  20%{opacity:1}
+  80%{opacity:1}
+  100%{opacity:0}
+}
+
 /* Define colour values */
 :root {
   --background-colour: #F1F7ED;
@@ -124,6 +136,7 @@ li a:hover {
 
 .slideshow {
   float: left;
+  margin-right: 30px;
 }
 
 .slideshow img {
