@@ -183,6 +183,31 @@ li a:hover {
   margin-bottom: 40px;
 }
 
+/* Cards on news page */
+.card {
+  clear: both;
+  padding: 15px;
+  height: 120px;
+  border-style: solid;
+  border-width: 2px;
+  border-color: grey;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.card p {
+  float: left;
+}
+
+.card img {
+  float: right;
+  height: 120px;
+}
+
+.card:hover {
+  opacity: 0.8;
+}
+
 /*  ------- FOOTER -------  */
 .footer {
   background-color: var(--background-colour);
