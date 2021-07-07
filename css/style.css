@@ -211,6 +211,10 @@ li a:hover {
   cursor: pointer;
 }
 
+.map {
+  margin-bottom: 40px;
+}
+
 /*  ------- FOOTER -------  */
 .footer {
   background-color: var(--background-colour);
