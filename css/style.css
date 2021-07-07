@@ -9,10 +9,10 @@
 }
 
 @keyframes fading {
-  0%{opacity:0}
-  20%{opacity:1}
-  80%{opacity:1}
-  100%{opacity:0}
+  0%{filter:brightness(0)}
+  20%{filter:brightness(1)}
+  80%{filter:brightness(1)}
+  100%{filter:brightness(0)}
 }
 
 /* Define colour values */
@@ -145,10 +145,12 @@ li a:hover {
   width: 500px;
 }
 
+/* Social media buttons */
 .social {
   width: 25px;
   position: fixed;
-  bottom: 5px;
+  top: 5px;
+  border-radius: 5px;
 }
 
 .social:hover {
@@ -206,6 +208,7 @@ li a:hover {
 
 .card:hover {
   opacity: 0.8;
+  cursor: pointer;
 }
 
 /*  ------- FOOTER -------  */
