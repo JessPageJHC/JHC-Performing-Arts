@@ -33,35 +33,59 @@
 
   <div class="wrapper">
     <div class="content">
-      <div class="slideshow">
-        <img class="mySlides fade" src="images/image1.jpg">
-        <img class="mySlides fade" src="images/image2.jpg">
-        <img class="mySlides fade" src="images/image3.jpg">
-        <img class="mySlides fade" src="images/image4.jpg">
-        <img class="mySlides fade" src="images/image5.jpg">
-        <img class="mySlides fade" src="images/image6.jpg">
+      <div id="welcome">
+          <div class="slideshow">
+            <img class="mySlides fade" src="images/image1.jpg">
+            <img class="mySlides fade" src="images/image3.jpg">
+            <img class="mySlides fade" src="images/image4.jpg">
+            <img class="mySlides fade" src="images/image5.jpg">
 
-        <script>
-          var slideIndex = 0;
-          carousel();
+            <script>
+              var slideIndex = 0;
+              carousel();
 
-          function carousel() {
-            var i;
-            var x = document.getElementsByClassName("mySlides");
-            for (i = 0; i < x.length; i++) {
-              x[i].style.display = "none";
-            }
-            slideIndex++;
-            if (slideIndex > x.length) {slideIndex = 1}
-            x[slideIndex-1].style.display = "block";
-            setTimeout(carousel, 9000); // Change image every 9 seconds
-          }
-        </script>
-      </div>
+              function carousel() {
+                var i;
+                var x = document.getElementsByClassName("mySlides");
+                for (i = 0; i < x.length; i++) {
+                  x[i].style.display = "none";
+                }
+                slideIndex++;
+                if (slideIndex > x.length) {slideIndex = 1}
+                x[slideIndex-1].style.display = "block";
+                setTimeout(carousel, 9000); // Change image every 9 seconds
+              }
+            </script>
+          </div>
+        
+          <h2>Welcome to JHC Performing Arts</h2>
+          <p>James Hargest College has lots of performing arts and cool stuff. I don't know what to write here yet but for now just pretend there's some really meaningful text here.</p>
+          <p>Scroll down for some tasty links! Mmmmm, tasty! Yummy yummy links! My favourite!</p>
+        </div>
 
-      <div style="text-align:left;">
-        <h2>look some people</h2>
-        <p>people doing stuff</p>
+        <div class="divider"></div>
+
+        <div id="drama" style="float:left; text-align:left;">
+          <img src="images/image6.jpg" style="float:right;" width="434px">
+          <h2>Drama</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque fringilla erat nulla, nec hendrerit erat lacinia eu. Suspendisse pharetra elit et turpis bibendum condimentum. Nullam aliquet viverra orci a posuere. Aenean eu urna massa. Aliquam eget quam purus. Maecenas ut purus pellentesque, eleifend urna a, sodales enim.</p>
+          <a href="drama.html">
+            <div class="button">
+              <p>See More</p>
+            </div>
+          </a>
+        </div>
+
+        <div id="music" style="float:right; text-align:right;">
+          <img src="images/image2.jpg" style="float:left;" width="434px">
+          <h2>Music</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque fringilla erat nulla, nec hendrerit erat lacinia eu. Suspendisse pharetra elit et turpis bibendum condimentum. Nullam aliquet viverra orci a posuere. Aenean eu urna massa. Aliquam eget quam purus. Maecenas ut purus pellentesque, eleifend urna a, sodales enim.</p>
+          <a href="music.html">
+            <div class="button">
+              <p>See More</p>
+            </div>
+          </a>
+        </div>
       </div>
     </div>
   </div>
