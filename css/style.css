@@ -245,6 +245,40 @@ input[type=submit]:hover {
   background-color: #f2f2f2;
   padding: 20px;
   font-family: Merriweather;
+  font-size: 14px;
+}
+
+/* Banners on drama and music pages */
+.banner {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.banner img {
+  filter: brightness(0.4);
+  width: 100%;
+}
+
+.banner img:hover {
+  filter: brightness(0.5);
+}
+
+.banner h2 {
+  position: absolute;
+  bottom: 2px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 25px;
+}
+
+/* Navigation on drama and music pages */
+.navigation {
+  margin-top: 10px;
+  margin-bottom: 15px;
+  font-family: Poppins;
+  font-size: 12px;
+  clear: both;
 }
 
 /*  ------- FOOTER -------  */
