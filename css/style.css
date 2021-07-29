@@ -143,6 +143,7 @@ li a:hover {
 
 .slideshow img {
   width: 500px;
+  pointer-events: none;
 }
 
 /* Social media buttons */
